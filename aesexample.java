@@ -50,12 +50,17 @@ public class aesexample {
 
  }
     public static void main(String[] args) throws Exception {
-        String key = "password";
-        String datatstring = "username";
+     String key = "password";
+        String datastring = "username";
+        String datastring2 = "username2";
 
-        byte[] encrypted = encrypt(datatstring, key);
+        byte[] encrypted = encrypt(datastring, key);
         System.out.println(encrypted);
         String decrypted = decrypt(encrypted, key);
         System.out.println(decrypted);
+        byte[] encrypted2 = encrypt(datastring2, key);
+        System.out.println(encrypted2);
+        String decrypted2 = decrypt(encrypted2, key);
+        System.out.println(decrypted2);
     }
 }
